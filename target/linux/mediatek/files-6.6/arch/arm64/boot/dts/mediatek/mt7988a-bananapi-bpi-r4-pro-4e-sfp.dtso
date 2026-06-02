@@ -1,0 +1,23 @@
+// SPDX-License-Identifier: (GPL-2.0 OR MIT)
+/*
+ * Copyright (C) 2023
+ * Author: Daniel Golle <daniel@makrotopia.org>
+ */
+
+/dts-v1/;
+/plugin/;
+
+/ {
+	compatible = "bananapi,bpi-r4-pro-4e", "mediatek,mt7988a";
+
+	fragment@0 {
+		target = <&gmac1>;
+		__overlay__ {
+			managed = "in-band-status";
+			phy-mode = "10gbase-r";
+			phy-connection-type = "10gbase-r";
+			sfp = <&sfp2>;
+			status = "okay";
+		};
+	};
+};
