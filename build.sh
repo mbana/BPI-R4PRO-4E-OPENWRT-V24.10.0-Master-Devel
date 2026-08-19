@@ -43,10 +43,10 @@ apt install -yq \
     libbabeltrace-dev \
     liblzma-dev \
     libzstd-dev \
-	zstd
+	zstd \
+	curl
 
 git config --global --add safe.directory /work
-git config --global --add safe.directory '*'
 
 ./scripts/feeds update -a
 ./scripts/feeds install -a
