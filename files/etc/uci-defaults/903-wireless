@@ -11,6 +11,14 @@ uci set wireless.default_radio2.ssid='12-Rochford-Close_E6-1QR_6G'
 uci set wireless.default_radio2.key='1234567890'
 uci set wireless.ap_mld_1.ssid='12-Rochford-Close_E6-1QR'
 uci set wireless.ap_mld_1.key='1234567890'
+
+# # Prevent these errors from spamming the logs:
+# # daemon.err hostapd: Management frame protection is required in 6 GHz
+# uci set wireless.default_radio0_mld.ieee80211w='2'
+# uci set wireless.default_radio0_mld.ocv='0'
+# uci set wireless.default_radio1_mld.ieee80211w='2'
+# uci set wireless.default_radio1_mld.ocv='0'
+
 uci commit wireless
 wifi reconf
 

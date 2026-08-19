@@ -15,8 +15,6 @@ Sunshine!
 
 ## Build
 
-**NOTE**: You need a SD card that has a minimum size of 32GB, you can adjust this to your needs in `.config` - look for `CONFIG_TARGET_ROOTFS_PARTSIZE=16384` and change the value to whatever suits your needs.
-
 For instructions on how to generate a flashable image, see [`./BUILD.md`](./BUILD.md).
 
 ## Download

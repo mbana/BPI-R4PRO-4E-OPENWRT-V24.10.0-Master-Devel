@@ -1,8 +1,0 @@
-#!/bin/sh
-set -x
-exec >> /root/uci-defaults.log 2>&1
-
-uci add_list vnstat.cfg015065.interface='br-wan'
-uci commit vnstat
-
-exit 0
